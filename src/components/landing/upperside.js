@@ -57,12 +57,25 @@ const UpperSide = () => {
             data-aos-duration="1000"
             data-aos-delay="3000"
           >
-            <img
+            <button
+              type="button"
+              className="text-white bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 font-medium rounded-lg text-sm px-5 py-3 text-center mr-2 mb-2 w-48 lg:w-52 2xl:w-60 cursor-pointer"
+              onClick={() =>
+                window.open(
+                  "https://drive.google.com/file/d/1UUFPW7cIUff-TtV2IGcka4Whe6LIs0Qq/view?usp=share_link",
+                  "_blank"
+                )
+              }
+            >
+              Download Now
+            </button>
+
+            {/* <img
               src={DownloadApp}
               alt="Download Generation App From Play Store"
               className="cursor-pointer w-48 lg:w-52 2xl:w-60"
-              onClick={() => window.open('https://play.google.com/store/apps/details?id=com.samarpandasgupta.generation','_blank')}
-            />
+              
+            /> */}
           </div>
         </div>
 
